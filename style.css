@@ -12,4 +12,8 @@ body{
     place-items: center;
     height: 100vh;
     width: 100vw;
+    gap:10px;
+    background:#171d22;
+    color:white;
+  
 }
