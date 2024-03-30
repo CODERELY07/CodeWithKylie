@@ -15,5 +15,72 @@ body{
     gap:10px;
     background:#171d22;
     color:white;
-  
+}
+form{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+form input,
+button{
+    width: 100%;
+    padding: 8px 12px;
+    background: transparent;
+    border: 1px solid #18a2a4;
+    color: #fff;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+}
+label{
+    line-height: 30px;
+}
+form input:hover,
+form input:focus,
+form button:hover{
+   box-shadow: 0px 0px 4px 1px #18a2a4;
+}
+form button {
+    position: relative;
+}
+form button::before {
+    content: "";
+    bottom: 0px;
+    right: 0;
+    position: absolute;
+    border: 1px solid #9adfe2;
+    width:0px;
+    opacity: 0;
+}
+form button:hover::before,
+form button:focus::before {
+    animation: loading 1000ms ease infinite;
+}
+@keyframes loading {
+    0% {
+        left: 0;
+        width: 0px;
+        opacity: 1;
+        border: 1px solid blueviolet;
+    }
+
+    100% {
+        width: 100%;
+        left: 100%;
+        border: 1px solid #9adfe2;
+    }
+ 
+}
+
+small{
+  text-align: right;
+}
+small a{
+    color: #18a2a4;
+    margin-left:5px;
+}
+small a:hover{
+    text-decoration: underline;
 }
