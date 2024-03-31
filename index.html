@@ -6,10 +6,11 @@
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="full_screen-con">
-        <form>
+        <form id="login_form">
             <h2>Login</h2>
             <div class="input_groups">
                 <label for="username">Username</label>
@@ -17,10 +18,10 @@
             </div>
             <div class="input_groups">
                 <label for="username">Password</label>
-                <input type="text" name="password" id="password">
+                <input type="password" name="password" id="password">
             </div>
             <small>Forgot Password?<a href="#">Recover</a></small>
-            <button type="button" id="login_btn">Login</button>
+            <button type="submit" id="login_btn">Login</button>
         </form>
     </div>
 </body>

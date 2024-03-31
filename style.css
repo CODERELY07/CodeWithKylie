@@ -17,7 +17,7 @@ body{
     color:white;
     font-family: 'Poppins';
     font-size: 15px;
-  
+    --test-color:#aa1919;
 }
 form{
     height: 50vh;
@@ -77,7 +77,6 @@ form button:focus::before {
         left: 100%;
         border: 1px solid #9adfe2;
     }
- 
 }
 
 small{
@@ -89,4 +88,9 @@ small a{
 }
 small a:hover{
     text-decoration: underline;
+}
+.error{
+    color: #aa1919;
+    margin-top: 10px;
+    font-size: 14px;
 }
