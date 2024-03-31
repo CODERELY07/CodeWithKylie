@@ -15,7 +15,9 @@ body{
     gap:10px;
     background:#171d22;
     color:white;
-  
+    font-family: 'Poppins';
+    font-size: 15px;
+    --test-color:#aa1919;
 }
 form{
     height: 50vh;
@@ -34,6 +36,8 @@ button{
     position: relative;
     outline: none;
     overflow: hidden;
+    border-radius:5px;
+    
 }
 label{
     line-height: 30px;
@@ -84,4 +88,9 @@ small a{
 }
 small a:hover{
     text-decoration: underline;
+}
+.error{
+    color: #aa1919;
+    margin-top: 10px;
+    font-size: 14px;
 }
